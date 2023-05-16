@@ -14,7 +14,22 @@ public class LineComparisonProgram
         System.out.println("length between point 2 and 3 ( Line 2) -"+len2);
 
         System.out.println("line 1 and line2 are equals  -----" + len1.equals(len2));
+        int a=(len1.compareTo(len2));
+        if(a == 0)
+        {
+            System.out.println("Lines are equal");
+        }
+        if(a > 0)
+        {
+            System.out.println("Line1 greater than line2");
+        }
+        if(a < 0)
+        {
+            System.out.println("Line1 Smaller than line2");
+        }
+
     }
+
     public static void main(String[] args)
     {
         LineComparisonProgram obj = new LineComparisonProgram();
